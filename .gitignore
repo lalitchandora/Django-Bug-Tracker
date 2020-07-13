@@ -1,2 +1,4 @@
 .venv
 bugtracker_project/bugtracker_project/__pycache__
+bugtracker_project/projects_app/__pycache__
+bugtracker_project/projects_app/migrations/__pycache__
