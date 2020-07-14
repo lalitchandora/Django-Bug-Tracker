@@ -1,8 +1,14 @@
 from django.shortcuts import render, redirect
 from .forms import ProjectForm
+from .models import Project
 
 def home(request):
-    return render(request,'projects_app/base.html')
+    project_list = Project.objects.all()
+    context = {
+        'projects': project_list,
+        'home': 'home',
+    }
+    return render(request, 'projects_app/base.html', context)
 
 def add_project(request):
     if request.method == "POST":
