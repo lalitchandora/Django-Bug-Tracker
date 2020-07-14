@@ -1,0 +1,16 @@
+.navbar{
+    background-color: rgb( 70, 67, 255 );
+}
+
+.navbar a{
+    color: white;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+#add-project{
+    text-transform: uppercase;
+}
