@@ -5,11 +5,27 @@
         <meta charset="UTF-8">  
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Bug Tracker</title>  
+        <!-- Bootstrap files -->
         <link rel="stylesheet" href="{% static 'bootstrap-4.3.1/css/bootstrap.min.css' %}" >  
         <script type="text/javascript" src="{% static 'bootstrap-4.3.1/js/bootstrap.min.js' %}"></script>  
+        <!-- css and js files -->
+        <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
         <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
     </head>  
     <body>  
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">Bug Tracker</a>
+        </nav>
+
+        {% block addprojectform %}
+        {% endblock addprojectform %}
+
+        {% if home %}
+            <div class="flex-container">
+                <button type="button" id="add-project" class="mt-5 btn btn-outline-primary" onclick="openform()">add project</button>
+            </div>
+        {% endif %}
+        
         
     </body>  
 </html>  
