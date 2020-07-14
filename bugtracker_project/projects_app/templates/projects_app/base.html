@@ -20,33 +20,9 @@
         {% block addprojectform %}
         {% endblock addprojectform %}
 
-        {% if home %}
-            <div class="container mt-3">
-                <h1 class="display-4">Projects</h1>
-                <table class="table mt-5"> 
-                    <thead>
-                        <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Organization/Company</th>
-                        <th scope="col">Technology Used</th>
-                    </thead>
-                    <tbody>
-                        {% for project in projects %}
-                            <tr>
-                                <th scope="row"> {{forloop.counter}} </th>
-                                <td>{{project.name}}</td>
-                                <td>{{project.organization_name}}</td>
-                                <td>{{project.technology}}</td>
-                            </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-            <div class="flex-container">
-                <button type="button" id="add-project" class="mt-5 btn btn-outline-primary" onclick="openform()">add project</button>
-            </div>
-        {% endif %}
+        {% block home %}
+        {% endblock home %}
         
-        
+                
     </body>  
 </html>  

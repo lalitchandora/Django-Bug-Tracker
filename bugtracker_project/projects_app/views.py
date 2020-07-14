@@ -6,9 +6,8 @@ def home(request):
     project_list = Project.objects.all()
     context = {
         'projects': project_list,
-        'home': 'home',
     }
-    return render(request, 'projects_app/base.html', context)
+    return render(request, 'projects_app/home.html', context)
 
 def add_project(request):
     if request.method == "POST":
