@@ -1,0 +1,29 @@
+{% extends 'projects_app/base.html' %}
+{% block bug %}
+    <div class="container">
+        <h1 class="display-4">Project: {{project_name}} </h1>
+        <table class="table mt-5"> 
+            <thead>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Priority</th>
+                <th scope="col">State</th>
+            </thead>
+            <tbody>
+                {% for bug in bugs_list %}
+                    <tr>
+                        <th scope="row"> {{forloop.counter}} </th>
+                        <td>{{bug.name}}</td>
+                        <td>{{bug.desc}}</td>
+                        <td>{{bug.get_priority_display}}</td>
+                        <td>{{bug.get_state_display}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="flex-container">
+            <button type="button" id="add-project" class="mt-5 btn btn-outline-primary" onclick="openbugform()">add bug</button>
+        </div>
+    </div>
+{% endblock %}
