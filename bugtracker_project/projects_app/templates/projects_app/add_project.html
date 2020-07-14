@@ -1,0 +1,25 @@
+{% extends 'projects_app/base.html' %}
+{% block addprojectform %}
+    <div class="container">
+        <h1 class="display-4">Add Project</h1>
+        <form class="mt-5" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="project_name">Name</label>
+                {{ form.name }}
+            </div>
+            <div class="form-group">
+                <label for="organization_name">Organization Name</label>
+                {{ form.organization_name }}
+            </div>
+            <div class="form-group">
+                <label for="project_technology">Technology</label>
+                {{ form.technology }}
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+    
+    
+{% endblock%}
