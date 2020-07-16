@@ -4,18 +4,18 @@ from .models import Bug
 class AddBugForm(forms.ModelForm):
     class Meta:
         model = Bug
-        fields = '__all__'
+        fields = ('name','desc','priority','state')
         widgets = {
             'name': forms.TextInput(attrs = {
                 'class': 'form-control'
             }),
-            'desc': forms.TextArea(attrs = {
+            'desc': forms.Textarea(attrs = {
                 'class': 'form-control'
             }),
-            'priority': forms.TextInput(attrs = {
+            'priority': forms.Select(attrs = {
                 'class': 'form-control'
             }),
-            'state': forms.TextInput(attrs = {
+            'state': forms.Select(attrs = {
                 'class': 'form-control'
             })
         }
