@@ -2,6 +2,6 @@ function openprojectform(){
     window.location = 'createproject/';
 }
 
-function openbugform(){
-    window.location = 'http://localhost:8000/bug/addbug/';
+function openbugform(id){
+    window.location = 'http://localhost:8000/bug/addbug/'+id;
 }
