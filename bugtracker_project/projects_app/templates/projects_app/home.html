@@ -13,7 +13,7 @@
                 {% for project in projects %}
                     <tr>
                         <th scope="row"> {{forloop.counter}} </th>
-                        <td><a href="#">{{project.name}}</a></td>
+                        <td><a href="{% url 'bug_list' project.id %}">{{project.name}}</a></td>
                         <td>{{project.organization_name}}</td>
                         <td>{{project.technology}}</td>
                     </tr>
