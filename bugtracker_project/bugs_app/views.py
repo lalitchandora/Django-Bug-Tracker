@@ -35,3 +35,9 @@ def bug_add(request,project_id):
     }
 
     return render(request,'bugs_app/addbugs.html', context)
+
+def bug_delete(request,project_id,bug_id):
+    project = Project.objects.filter(id = project_id)[0]
+    bug = Bug.objects.filter(project_id = project,id = bug_id)[0]
+    bug.delete()
+    return redirect(reverse('bug_list', args=[project_id]))
