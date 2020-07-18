@@ -9,7 +9,7 @@ A basic project for managing bugs in a typical project/application
 ## Screenshots
 
 ###### Homepage
-
+![Image of Homepage](https://github.com/lalitchandora/Django-Bug-Tracker/blob/master/screenshots/homepage.png)
 
 ## Tech/Framework Used
 
