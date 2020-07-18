@@ -1,7 +1,8 @@
 {% extends 'projects_app/base.html' %}
 {% block bug %}
     <div class="container">
-        <h1 class="display-4">Project: {{project.name}} </h1>
+        <h1 class="display-4 project-title">Project: </h1>
+        <h1 class="display-4 project-name">{{project.name}}</h1>
         <table class="table mt-5"> 
             <thead>
                 <th scope="col">#</th>
@@ -13,7 +14,8 @@
             </thead>
             <tbody>
                 {% for bug in bugs_list %}
-                    <tr>
+
+                    <tr class="bug-row">
                         <th scope="row"> {{forloop.counter}} </th>
                         <td>{{bug.name}}</td>
                         <td>{{bug.desc}}</td>
@@ -31,7 +33,7 @@
             </tbody>
         </table>
         <div class="flex-container">
-            <button type="button" id="add-project" class="mt-5 btn btn-outline-primary" onclick="openbugform({{project.id}})">add bug</button>
+            <button type="button" id="add-project" class="my-2 btn btn-outline-primary" onclick="openbugform({{project.id}})">add bug</button>
         </div>
     </div>
 {% endblock %}

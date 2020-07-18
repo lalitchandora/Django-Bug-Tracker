@@ -1,0 +1,12 @@
+.project-title{
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.project-name{
+    display: inline;
+    color: orange;
+    font-family: 'Playfair Display', serif;
+
+}
