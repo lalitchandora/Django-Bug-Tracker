@@ -8,15 +8,20 @@
         <!-- Bootstrap files -->
         <link rel="stylesheet" href="{% static 'bootstrap-4.3.1/css/bootstrap.min.css' %}" >  
         <script type="text/javascript" src="{% static 'bootstrap-4.3.1/js/bootstrap.min.js' %}"></script>  
-        <!-- css and js files -->
+        <!-- css files -->
         <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
         <link rel="stylesheet" href="{% static 'css/bugs_list.css' %}">
+        <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+        <link rel="stylesheet" href="{% static 'css/table.css' %}">
+        <!--js files-->
         <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
         <!--link for google icons-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--link for google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=Nunito+Sans:wght@300&family=Playfair+Display&family=Red+Rose&family=Rowdies:wght@700&display=swap" rel="stylesheet"> 
     </head>  
     <body>  
-        <nav class="navbar">
+        <nav class="navbar mb-3">
             <a class="navbar-brand" href=" {% url 'home' %} ">Bug Tracker</a>
         </nav>
 
