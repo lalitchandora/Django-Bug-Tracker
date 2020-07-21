@@ -19,3 +19,8 @@
     font-family: 'Rowdies', cursive;
     font-size: 30px;
 }
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
