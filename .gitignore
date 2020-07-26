@@ -4,3 +4,5 @@ bugtracker_project/projects_app/__pycache__
 bugtracker_project/projects_app/migrations/__pycache__
 bugtracker_project/bugs_app/__pycache__
 bugtracker_project/bugs_app/migrations/__pycache__
+bugtracker_project/users_app/__pycache__
+bugtracker_project/users_app/migrations/__pycache__
