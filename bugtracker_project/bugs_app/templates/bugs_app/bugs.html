@@ -22,7 +22,7 @@
                         <td>{{bug.get_priority_display}}</td>
                         <td>{{bug.get_state_display}}</td>
                         <td>
-                            <a href=" {% url 'bug_delete' project.id bug.id %} ">
+                            <a href=" {% url 'bug_delete' project.id bug.id %} "title="Delete Item">
                                 <span class="material-icons delete-icon">
                                     delete
                                 </span>
